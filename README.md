@@ -1,5 +1,5 @@
-# neuwal-lx
-neuwal lx
+# nwl-lx
+nwl lx
 
 Skill-Befehle mit dem Muster "Wahlumfrage {country}" funktionieren und es wird in der Funktion "getWahlumfage" das richtige ausgeführt. "Wahlumfrage {Niederösterreich}" oder jene, die nicht vorhanden sind wie "Wahlumfage {Bozen}" funktionieren.
 
