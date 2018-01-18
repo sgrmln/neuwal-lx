@@ -1,0 +1,200 @@
+{
+  "languageModel": {
+    "types": [
+      {
+        "name": "country",
+        "values": [
+          {
+            "id": "1",
+            "name": {
+              "value": "Österreich",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "2",
+            "name": {
+              "value": "Wien",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "3",
+            "name": {
+              "value": "Niederösterreich",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "4",
+            "name": {
+              "value": "Oberösterreich",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "7",
+            "name": {
+              "value": "Salzburg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "10",
+            "name": {
+              "value": "Tirol",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "9",
+            "name": {
+              "value": "Vorarlberg",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "8",
+            "name": {
+              "value": "Kärnten",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6",
+            "name": {
+              "value": "Burgenland",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "5",
+            "name": {
+              "value": "Steiermark",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "900",
+            "name": {
+              "value": "OGM",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "901",
+            "name": {
+              "value": "Unique Research",
+              "synonyms": [
+                "uniqueresearch"
+              ]
+            }
+          },
+          {
+            "id": "902",
+            "name": {
+              "value": "Research Affairs",
+              "synonyms": [
+                "researchaffairs"
+              ]
+            }
+          },
+          {
+            "id": "903",
+            "name": {
+              "value": "Market",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "904",
+            "name": {
+              "value": "IMAS",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "905",
+            "name": {
+              "value": "IFES",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "906",
+            "name": {
+              "value": "TripleM",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "907",
+            "name": {
+              "value": "Hajek",
+              "synonyms": [
+                "Peter Hajek"
+              ]
+            }
+          },
+          {
+            "id": "908",
+            "name": {
+              "value": "GFK",
+              "synonyms": []
+            }
+          }
+        ]
+      },
+      {
+        "name": "transcriptElement",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "aktuell",
+              "synonyms": []
+            }
+          }
+        ]
+      }
+    ],
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "GetTranscript",
+        "samples": [
+          "Transkript"
+        ],
+        "slots": []
+      },
+      {
+        "name": "GetWahlumfrage",
+        "samples": [
+          "Was ist die aktuelle Wahlumfrage von {country}",
+          "Wahlumfrage von {country}",
+          "Wahlumfrage {country}",
+          "Wie lautet die aktuelle Wahlumfrage für {country}",
+          "Wahlumfrage für {country}"
+        ],
+        "slots": [
+          {
+            "name": "country",
+            "type": "country"
+          }
+        ]
+      }
+    ],
+    "invocationName": "neu wal"
+  }
+}
