@@ -68,7 +68,7 @@ function getWelcomeResponse(callback) {
     const cardOutput = 'Fragen nach \'Wahlumfrage Österreich\',  \'Wahlumfrage Wien\' oder nach \'Transkript\'.';
     let speechOutput = '';
     let shouldEndSession = false;
-    let repromptText = '';
+    let repromptText = 'Frage nach! Repromt-Dummy';
 
     var httpCb = function(response) {
         var str= '';
@@ -262,6 +262,8 @@ function getWahlumfrage(intent, session, callback) {
             } 
             
             shouldEndSession = false;
+            //shouldEndSession = true;
+
     
             // Setting repromptText to null signifies that we do not want to reprompt the user.
             // If the user does not respond or says something that is not understood, the session
@@ -314,6 +316,7 @@ function onIntent(intentRequest, session, callback) {
     if (intentName === 'GetWahlumfrage') {
         getWahlumfrage(intent, session, callback);
     } else if (intentName === 'GetTranscript') {
+//        getTranscript(intent, session, callback);
         getTranscript(intent, session, callback);
     } else if (intentName === 'AMAZON.HelpIntent') {
         getWelcomeResponse(callback);
