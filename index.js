@@ -68,7 +68,7 @@ function getWelcomeResponse(callback) {
     const cardOutput = 'Fragen nach \'Wahlumfrage Österreich\',  \'Wahlumfrage Wien\' oder nach \'Transkript\'.';
     let speechOutput = '';
     let shouldEndSession = false;
-    let repromptText = 'Frage nach! Repromt-Dummy';
+    let repromptText = '';
 
     var httpCb = function(response) {
         var str= '';
