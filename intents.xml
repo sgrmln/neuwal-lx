@@ -154,6 +154,13 @@
               "value": "aktuell",
               "synonyms": []
             }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "aktuelle",
+              "synonyms": []
+            }
           }
         ]
       }
@@ -174,9 +181,21 @@
       {
         "name": "GetTranscript",
         "samples": [
-          "Transkript"
+          "lies mir das {transcriptElement} Transkript vor",
+          "öffne das {transcriptElement} Transkript",
+          "Transkript {transcriptElement}",
+          "lies mir das Transkript von {transcriptElement} vor",
+          "lies mir das Transkript {transcriptElement} vor",
+          " {transcriptElement} Transkript",
+          "was ist das {transcriptElement} Transkript",
+          "öffne das Transkript von {transcriptElement}"
         ],
-        "slots": []
+        "slots": [
+          {
+            "name": "transcriptElement",
+            "type": "transcriptElement"
+          }
+        ]
       },
       {
         "name": "GetWahlumfrage",
@@ -195,6 +214,6 @@
         ]
       }
     ],
-    "invocationName": "neu wal"
+    "invocationName": "neuwal"
   }
 }
